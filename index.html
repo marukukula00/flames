@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAMES Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <h1>FLAMES Game</h1>
+        <form id="flamesForm" class="animate__animated animate__pulse animate__infinite">
+            <label for="name1">Your Name:</label>
+            <input type="text" id="name1" required>
+            <br>
+            <label for="name2">Their Name:</label>
+            <input type="text" id="name2" required>
+            <br>
+            <button type="submit">Find Relationship</button>
+        </form>
+        <div id="result" class="animate__animated"></div>
+    </div>
+    <div id="confetti"></div>
+    <audio id="successSound" src="success.mp3" preload="auto"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
